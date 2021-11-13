@@ -56,7 +56,12 @@ ui <- fluidPage(
                strong("W"), "number of wins", br(),
                strong("D"), "number of draws", br(),
                strong("L"), "number of losses", br(),
-               strong("PTS"), "number of points"
+               strong("PTS"), "number of points",
+               hr(),
+               div("Football data provided by the ",
+                   a("Football-Data.org API",
+                     href="https://www.football-data.org/"),".",
+                   style = "font-size:11px;")
         )
     )
 )
