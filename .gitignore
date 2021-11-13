@@ -1,0 +1,11 @@
+# Ignore Mac system files
+.DS_store
+
+# Ignore shinyapps folder
+rsconnect
+
+# Ignore RHistory
+.RHistory
+
+# Ignore config file
+_config.R
