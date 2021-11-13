@@ -109,11 +109,11 @@ build_standings_table <- function(team_matches, match_day, all_standings) {
     PL_table <- NULL
     
     for(team in names(team_matches)) {
-        tmp <- team_matches[[team]]
+        tmp <- tail(team_matches[[team]], match_day)
         
         # Get number of wins, loses, draws
         tmp$result <- factor(tmp$result, levels = c("win", "lose", "draw"))
-        results <- table(tail(tmp, match_day)$result)
+        results <- table(tmp$result)
         
         PL_table <- rbind(PL_table,
                           data.frame(position = NA,
