@@ -264,7 +264,10 @@ sub_table <- function(ix, match_day, team_matches, PL_table_df) {
                   theme = reactableTheme(
                       backgroundColor = sub_table_background),
                   sortable = FALSE,
-                  outlined = TRUE))
+                  outlined = TRUE,
+                  showPageInfo = FALSE,
+                  showPageSizeOptions = TRUE,
+                  defaultPageSize = 10))
     
 }
 
